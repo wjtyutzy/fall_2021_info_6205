@@ -11,7 +11,7 @@ public class Main {
     }
 
     //Assignment 5
-
+    //Question 1: String to Integer (atoi)
     //time o(n) space o(1)
     public int myAtoi(String str) {
         if(str == null || str.length() == 0){
