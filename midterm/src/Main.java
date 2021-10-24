@@ -18,7 +18,7 @@ public class Main {
     //Output: [1,3,12,0,0]
 
     //time O(n^2)   space (1)
-    public int[] moveZero(int[] nums){
+    public void moveZero(int[] nums){
         int i = 0;
         int k = nums.length - 1;
         for(i = 0; i <= k; i++){
@@ -47,9 +47,8 @@ public class Main {
             if(nums[i] != i){
                 return i;
             }
-            }
-        return i;
         }
+        return i;
     }
 
     //Question 3: Given a cyclic link List get the middle of the link list.
@@ -62,7 +61,7 @@ public class Main {
         if(fast == slow){
             ListNode temp = head;
             if(slow.next == temp.next){
-                slow.next == null;
+                slow.next = null;
             }else{
                 temp = temp.next;
                 slow = slow.next;
@@ -90,8 +89,8 @@ class ListNode{
     int val;
     ListNode next;
 
-    public ListNode(ListNode, int val){
-        this val = val;
+    public ListNode(ListNode node, int val){
+        this.val = val;
         next = null;
     }
 }
